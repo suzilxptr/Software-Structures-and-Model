@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bigbang.bastolasushil.lab12.MainActivity">
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/url"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="URL here" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/totalLines"
+        android:hint="Total Lines"
+        android:layout_marginBottom="34dp"
+        android:layout_above="@+id/longestLine"
+        android:layout_alignLeft="@+id/longestLine"
+        android:layout_alignStart="@+id/longestLine" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/longestLine"
+        android:hint="Longest Line"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/totalSize"
+        android:layout_alignStart="@+id/totalSize" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan"
+        android:id="@+id/scan"
+        android:layout_below="@+id/url"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/totalSize"
+        android:hint="TotalSize"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/longestLine"
+        android:layout_toRightOf="@+id/scan"
+        android:layout_toEndOf="@+id/scan" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lines"
+        android:id="@+id/textView2"
+        android:layout_alignTop="@+id/totalLines"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longest"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/totalLines"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Size"
+        android:id="@+id/textView4"
+        android:layout_alignTop="@+id/totalSize"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
