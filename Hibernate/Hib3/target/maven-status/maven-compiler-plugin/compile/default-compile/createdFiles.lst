@@ -1,0 +1,10 @@
+fi\metropolia\mav1\models\PublicTransport.class
+fi\metropolia\mav1\models\Bus.class
+fi\metropolia\mav1\util\ApplicationConfig.class
+fi\metropolia\mav1\models\Person.class
+fi\metropolia\mav1\util\HibernateUtil.class
+fi\metropolia\mav1\models\Bicycle.class
+fi\metropolia\mav1\models\Transportation.class
+fi\metropolia\mav1\service\StartupListener.class
+fi\metropolia\mav1\models\Plane.class
+fi\metropolia\mav1\models\PrivateTransport.class
